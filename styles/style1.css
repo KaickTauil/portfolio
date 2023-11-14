@@ -1,17 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --brancobg: #F0F7F4;
+    --azul1: #81C3D7;
+    --azul2: #2F6690;
+    --azul3: #16425B;
+
+    --fontepadrao: Arial, Helvetica, sans-serif;
+    --fontebebas: 'Bebas Neue', sans-serif, Arial;
+    --fontemono: 'Courier Prime', monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
-    background-color: #F0F7F4;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--brancobg);
+    font-family: var(--fontepadrao);
+}
+
+.main{
+    padding: 0 15px;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1410px;
+}
+
+#kiwi{
+    max-width: 30px;
 }
 
 nav{
-    background-color: #81C3D7;
+    background-color: var(--azul1);
     padding: 7px 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    font-weight: lighter;
+}
 
 #menu{
     display: flex;
@@ -20,11 +50,14 @@ nav{
 }
 
 #tit_nav{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontebebas);
+    font-weight: lighter;
     margin: 0px auto 0px 7px;
     flex-shrink: 0;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
+    font-size: 25.2px;
+    color: var(--azul3);
+    display: flex;
+    align-items: center;
 }
 
 #tabs{
@@ -38,13 +71,59 @@ nav{
     margin: 0 auto;
     padding: 0px 10px;
     text-decoration: none;
-    color: #16425B;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 25px;
-
+    color: var(--azul3);
+    font-family: var(--fontebebas);
+    font-size: 25.2px;
 }
 
 .divisor{
     border-left: 2px solid black;
     margin: 0px 8px;
+}
+
+#bemvind{
+    font-family: var(--fontebebas);
+    font-size: 45.9px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+#txt_inicial p{
+    font-family: var(--fontemono);
+    margin-right: 35%;
+    font-size: 20px;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card{
+    height: 289.9px;
+    max-width: 289.9px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--azul3);
+    padding: 10px;
+    margin: 35px 20px 0;
+}
+
+#skills picture{
+    border-style: solid;
+    border-radius: 100%;
+    border-color: var(--azul1);
+    margin-top: 25px;
+}
+
+#skills img{
+    align-self: center;
+    width: 82.8px;
+    padding: 7px;
 }

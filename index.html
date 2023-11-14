@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <p id="tit_nav">🥝PORTFÓLIO KAICK TAUIL</p>
+        <h1 id="tit_nav"> <img src="images/kiwiicon.svg" alt="kiwi" id="kiwi">PORTFÓLIO KAICK TAUIL</h1>
         <ul id="tabs">
             <a href="#" class="tab_nav">SERVIÇOS</a>
             <div class="divisor"></div>
@@ -21,55 +21,63 @@
         </ul>
     </nav>
 
-    <section id="apresentacao">
+    <section id="apresentacao" class="main">
         <article id="txt_inicial">
-            <h1 id="bemvind">Bem vindo ao meu portfólio!</h1>
-            <p>Olá! Me chamo Kaick Tauil, sou desenvolvedor web com estudos na área de Database, Backend, Frontend, UX Design e UI Design</p>
+            <h1 id="bemvind">OLA! SEJA BEM VINDO/A !</h1>
+            <p>Tudo certo? Meu nome é Kaick, sou um desenvolvedor web, aspirante à fullstack !</p>
         </article>
         <aside>
             <!--item de indicação de qual pagina está-->
         </aside>
     </section>
+    <!--cards com os serviços/skills-->
+    <section id="skills" class="main">
+        <article class="card">
+            <picture>
+                <source media="(max-width: 82.8px)" srcset="">
+                <img src="images/webicon.svg" alt="icone web">
+            </picture>
+            <p class="tit_card">desenvolvimento web</p>
+            <p class="desc_card">desenvolvimento de sites e plataformas completos e responsivos</p>
+        </article>
+        <article class="card">
+            <picture>
+                <source media="(max-width: 82.8px)" srcset="#">
+                <img src="images/databaseicon.svg" alt="icone banco de dados">
+            </picture>
+            <p class="tit_card">database</p>
+            <p class="desc_card">Planejamento e desenvolvimento de bases de dados</p>
+        </article>
+        <article class="card">
+            <picture>
+                <source media="(max-width: 82.8px)" srcset="#">
+                <img src="images/desktopicon.svg" alt="icone computador">
+            </picture>
+            <p class="tit_card">Desenvolvimento desktop</p>
+            <p class="desc_card">Desenvolvimento de aplicações desktop para Windows</p>
+        </article>
+    </section>
 
-    <div id="bg"> <!--faixa azul do background-->
-        <!--cards com os serviços/skills-->
-        <section id="skills">
-            <article class="card">
-                <img src="#" alt="">
-                <p class="tit_card">desenvolvimento web</p>
-                <p class="desc_card">desenvolvimento de sites e plataformas completos e responsivos</p>
-            </article>
-            <article class="card">
-                <img src="#" alt="">
-                <p class="tit_card">database</p>
-                <p class="desc_card">Planejamento e desenvolvimento de bases de dados</p>
-            </article>
-            <article class="card">
-                <img src="#" alt="">
-                <p class="tit_card">Desenvolvimento desktop</p>
-                <p class="desc_card">Desenvolvimento de aplicações desktop para Windows</p>
-            </article>
-        </section>
-        <hr><h2>Projetos</h2><hr>
-        <section id="carousel"> <!--carousel dos projetos-->
-            <!--cards com fotos de cada projeto redirecionando para o mesmo-->
-            <article class="card_proj">
-                <a href="#"><img src="#" alt=""></a>
-                <p>Portal de notícias de um jornal digital</p>
-            </article>
-            <article class="card_proj">
-                <a href="#"><img src="#" alt=""></a>
-                <p>Site de divulgação de uma empresa</p>
-            </article>
-            <article class="card_proj">
-                <a href="#"><img src="#" alt=""></a>
-                <p>Sistema de controle de pedidos de restaurante</p>
-            </article>
-        </section>
-    </div>
+    <hr class="main"><h2>Projetos</h2><hr>
+    <section id="carousel" class="main"> <!--carousel dos projetos-->
+        <!--cards com fotos de cada projeto redirecionando para o mesmo-->
+        <article class="card_proj">
+            <a href="#"><img src="#" alt=""></a>
+            <p>Portal de notícias de um jornal digital</p>
+        </article>
+        <article class="card_proj">
+            <a href="#"><img src="#" alt=""></a>
+            <p>Site de divulgação de uma empresa</p>
+        </article>
+        <article class="card_proj">
+            <a href="#"><img src="#" alt=""></a>
+            <p>Sistema de controle de pedidos de restaurante</p>
+        </article>
+    </section>
     
-    <hr><h2>Contatos</h2><hr>
-    <section id="contato">
+    
+    <hr class="main"><h2>Contatos</h2><hr>
+    <section id="contato" class="main">
         <div class="cont">
             <img src="media/zapzap.svg" alt="whataspp">
             <a href="#">Clique para iniciar a conversa</a>
